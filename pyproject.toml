@@ -1,0 +1,56 @@
+
+# ---- STANDARD CONFIG ----
+[project]
+name = "VirgilBot"
+description = "Simple bot discord with VirgilAI integrated"
+version = "v0.0.1"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+
+[project.license]
+file = "LICENSE"
+
+[tool.debug]
+level_debug = "info" # (debug,info,warning,error,critical)
+logs_file = false
+
+# ------ CONFIG FOR POETRY ------
+[tool.poetry]
+name = "VirgilAI"
+version = "0.0.1"
+description = "Simple bot discord with VirgilAI integrated"
+authors = ["Retr0100 <dragonfaiver@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+tomli = "^2.0.1"
+discord-py = {extras = ["voice"], version = "^2.3.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.5"
+coverage = "^7.3.2"
+
+# ------ CONFIG OF RUFF  --------
+[tool.ruff]
+ignore = ["E501"]
+extend-include = ["*.pyw"]
+select = ["E","F","N","D","UP","PYI","SLOT","SIM","TD","FIX","W","PL"]
+exclude = [
+    ".git",
+    ".git-rewrite",
+    ".venv",
+    "__pypackages__",
+    "venv",
+]
+respect-gitignore = true
+target-version = "py311"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+
+
+
+
