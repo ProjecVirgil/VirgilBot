@@ -4,3 +4,7 @@
 
 # PYCACHE
 __pycache__
+
+
+#SCANNER CODE
+sonar-scanner
