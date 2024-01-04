@@ -6,6 +6,8 @@
 # PYCACHE
 __pycache__
 
+#POETRY
+poetry.lock
 
 #SCANNER CODE
 sonar-scanner
