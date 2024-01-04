@@ -1,6 +1,7 @@
 # ENVIROMENT
 .venv
 .env
+.vscode
 
 # PYCACHE
 __pycache__
