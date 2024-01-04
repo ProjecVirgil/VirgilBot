@@ -25,7 +25,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
 tomli = "^2.0.1"
-discord-py = {extras = ["voice"], version = "^2.3.2"}
+pyfiglet = "^1.0.2"
+nextcord = {extras = ["speed", "voice"], version = "^2.6.0"}
 
 
 [tool.poetry.group.dev.dependencies]
